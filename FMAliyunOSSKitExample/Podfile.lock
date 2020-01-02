@@ -1,0 +1,23 @@
+PODS:
+  - AliyunOSSiOS (2.10.7)
+  - FMAliyunOSSKit (1.0.0):
+    - AliyunOSSiOS (~> 2.10.7)
+
+DEPENDENCIES:
+  - FMAliyunOSSKit (from `./../`)
+
+SPEC REPOS:
+  trunk:
+    - AliyunOSSiOS
+
+EXTERNAL SOURCES:
+  FMAliyunOSSKit:
+    :path: "./../"
+
+SPEC CHECKSUMS:
+  AliyunOSSiOS: 602b6a4e70e62a5f0a6431c20496343141d7e66f
+  FMAliyunOSSKit: 3b6780c519fca544ad55d054c247d781067c8815
+
+PODFILE CHECKSUM: a4c626b5822a37a991ab1452588f4a03ec3e625a
+
+COCOAPODS: 1.8.4

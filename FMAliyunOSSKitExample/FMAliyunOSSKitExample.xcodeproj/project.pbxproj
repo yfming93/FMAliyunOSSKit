@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D45A02E854961B28CF39D8F /* libPods-FMAliyunOSSKitExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A11A3649522C65D3DC21E2F /* libPods-FMAliyunOSSKitExample.a */; };
 		DAF3E06C239A588500C70425 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF3E06B239A588500C70425 /* AppDelegate.m */; };
 		DAF3E06F239A588500C70425 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF3E06E239A588500C70425 /* SceneDelegate.m */; };
 		DAF3E072239A588500C70425 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF3E071239A588500C70425 /* ViewController.m */; };
@@ -36,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A11A3649522C65D3DC21E2F /* libPods-FMAliyunOSSKitExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FMAliyunOSSKitExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DC34BC3D33DE1587FB79B3B /* Pods-FMAliyunOSSKitExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMAliyunOSSKitExample.release.xcconfig"; path = "Target Support Files/Pods-FMAliyunOSSKitExample/Pods-FMAliyunOSSKitExample.release.xcconfig"; sourceTree = "<group>"; };
+		4D328F22E6528AD340AB8611 /* Pods-FMAliyunOSSKitExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMAliyunOSSKitExample.debug.xcconfig"; path = "Target Support Files/Pods-FMAliyunOSSKitExample/Pods-FMAliyunOSSKitExample.debug.xcconfig"; sourceTree = "<group>"; };
 		DAF3E067239A588500C70425 /* FMAliyunOSSKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FMAliyunOSSKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAF3E06A239A588500C70425 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DAF3E06B239A588500C70425 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -61,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D45A02E854961B28CF39D8F /* libPods-FMAliyunOSSKitExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F3BCF76C167D8DAFCC6B9D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A11A3649522C65D3DC21E2F /* libPods-FMAliyunOSSKitExample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AAF777522B6E615A9697EA93 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D328F22E6528AD340AB8611 /* Pods-FMAliyunOSSKitExample.debug.xcconfig */,
+				2DC34BC3D33DE1587FB79B3B /* Pods-FMAliyunOSSKitExample.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DAF3E05E239A588500C70425 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +111,8 @@
 				DAF3E085239A588600C70425 /* FMAliyunOSSKitExampleTests */,
 				DAF3E090239A588600C70425 /* FMAliyunOSSKitExampleUITests */,
 				DAF3E068239A588500C70425 /* Products */,
+				AAF777522B6E615A9697EA93 /* Pods */,
+				7F3BCF76C167D8DAFCC6B9D7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,6 +169,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAF3E096239A588600C70425 /* Build configuration list for PBXNativeTarget "FMAliyunOSSKitExample" */;
 			buildPhases = (
+				1E531FE30076B78A8861DD80 /* [CP] Check Pods Manifest.lock */,
 				DAF3E063239A588500C70425 /* Sources */,
 				DAF3E064239A588500C70425 /* Frameworks */,
 				DAF3E065239A588500C70425 /* Resources */,
@@ -261,6 +287,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E531FE30076B78A8861DD80 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FMAliyunOSSKitExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DAF3E063239A588500C70425 /* Sources */ = {
@@ -437,6 +488,7 @@
 		};
 		DAF3E097239A588600C70425 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D328F22E6528AD340AB8611 /* Pods-FMAliyunOSSKitExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +506,7 @@
 		};
 		DAF3E098239A588600C70425 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DC34BC3D33DE1587FB79B3B /* Pods-FMAliyunOSSKitExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

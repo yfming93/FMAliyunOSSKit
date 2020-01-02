@@ -1,0 +1,40 @@
+{
+  "name": "FMAliyunOSSKit",
+  "summary": "A delightful upload images to AliyunOSS base on FMAliyunOSSiOS SDK.",
+  "version": "1.0.0",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "袁凤鸣": "yfmingo@163.com"
+  },
+  "social_media_url": "https://www.yfmingo.cn/",
+  "homepage": "https://github.com/yfming93/FMAliyunOSSKit",
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source": {
+    "git": "https://github.com/yfming93/FMAliyunOSSKit.git",
+    "tag": "1.0.0"
+  },
+  "dependencies": {
+    "AliyunOSSiOS": [
+      "~> 2.10.7"
+    ]
+  },
+  "requires_arc": true,
+  "source_files": "FMAliyunOSSKit/**/*.{h,m}",
+  "public_header_files": "FMAliyunOSSKit/**/*.{h}",
+  "libraries": "z",
+  "frameworks": [
+    "UIKit",
+    "CoreFoundation",
+    "QuartzCore",
+    "CoreGraphics",
+    "CoreImage",
+    "CoreText",
+    "ImageIO",
+    "Accelerate"
+  ]
+}
